@@ -287,15 +287,7 @@ footer#contact {
     margin: auto;
   }
   
-  /* Education Cards */
-  .edu-card {
-    background: white;
-    border: 1px solid #e0e0e0;
-    border-radius: 4px;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-  }
+
   
   .edu-card-header {
     display: flex;
@@ -386,9 +378,10 @@ footer#contact {
   }
   
   .exp-logo {
-    width: 48px;
-    height: 48px;
+    width: 64px;
+    height: auto;
     object-fit: contain;
+    flex-shrink: 0;
   }
   
   .edu-card {
@@ -404,7 +397,7 @@ footer#contact {
   }
   
   .edu-logo {
-    width: 60px;
+    width: 64px;
     height: auto;
     object-fit: contain;
     flex-shrink: 0;
