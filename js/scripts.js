@@ -59,3 +59,23 @@ window.addEventListener('scroll', () => {
   });
 });
 
+
+function handleScroll() {
+  const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+  sections.forEach(section => {
+    if (!section) return;
+    const rect = section.getBoundingClientRect();
+
+    if (rect.top <= windowHeight * 0.75 && rect.bottom >= 0) {
+      section.classList.add('visible');
+    } else {
+      section.classList.remove('visible');
+    }
+  });
+}
+
+window.addEventListener('scroll', handleScroll);
+window.addEventListener('load', handleScroll);  // appel au chargement
+
+
