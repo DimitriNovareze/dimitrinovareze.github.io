@@ -225,9 +225,32 @@ footer#contact {
     background-color: #217dbb;
   }
   
+
+  
+  
+/* Section title */
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    position: relative;
+    color: #2c3e50;
+  }
+  
+  .section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #3498db;
+    margin: 0.5rem auto 0;
+    border-radius: 3px;
+  }
+
+
   .about-section {
     padding: 3rem 1rem;
-    background-color: #fafafa;
+    background-color: #f8f8f8;
     font-family: 'Montserrat', sans-serif;
   }
   
@@ -257,26 +280,6 @@ footer#contact {
     max-width: 600px;
   }
   
-  
-/* Section title */
-.section-title {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    position: relative;
-    color: #2c3e50;
-  }
-  
-  .section-title::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 3px;
-    background: #3498db;
-    margin: 0.5rem auto 0;
-    border-radius: 3px;
-  }
-  
   /* Container */
   .education-section {
     background: #fff;
@@ -284,6 +287,7 @@ footer#contact {
   }
   
   .container {
+    display: flex;
     max-width: 900px;
     margin: auto;
   }
@@ -324,10 +328,17 @@ footer#contact {
   }
   
   /* ==== Experience Section ==== */
-.experience-section {
+  .experience-section {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
     background: #f8f8f8;
     padding: 3rem 1rem;
   }
+  
   
   .exp-card {
     display: flex;
