@@ -14,28 +14,40 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
   
-  .navbar {
+/* NAVBAR – version discrète et non sticky */
+.navbar {
+    background-color: transparent;      
+    box-shadow: none;
+    padding: 1rem 2rem;
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: center;
-    padding: 1rem 0;
+    align-items: center;
+    position: relative; /* <- surtout PAS fixed ou sticky */
+    z-index: 1000;
   }
   
   .nav-links {
     list-style: none;
     display: flex;
     gap: 2rem;
+    margin: 0;
+    padding: 0;
   }
   
   .nav-links li a {
     text-decoration: none;
-    color: #3498db;
-    font-weight: 500;
-    transition: color 0.3s ease;
+    color: #666;
+    font-weight: 400;
+    font-size: 0.95rem;
+    transition: color 0.3s ease, transform 0.2s ease;
   }
   
   .nav-links li a:hover {
-    color: #217dbb;
+    color: #3498db;
+    transform: scale(1.05);
   }
+  
   
   #lead {
     height: 100vh;
