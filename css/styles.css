@@ -210,3 +210,57 @@ footer#contact {
     background-color: #217dbb;
   }
   
+
+  .about-section {
+    padding: 5rem 2rem;
+    background-color: #f7f7f7;
+  }
+  
+  .about-section .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  .about-left h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #217dbb;
+  }
+  
+  .about-left p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+  }
+  
+  .about-right h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #217dbb;
+  }
+  
+  .edu-item {
+    margin-bottom: 2rem;
+  }
+  
+  .edu-item h4 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #333;
+  }
+  
+  .edu-date {
+    font-size: 0.9rem;
+    color: #888;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .edu-item p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
