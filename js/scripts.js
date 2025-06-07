@@ -26,6 +26,20 @@ contactNavLink.addEventListener('click', (e) => {
   modal.style.display = 'block';
 });
 
+
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const targetID = link.getAttribute('href').substring(1); // enlève le #
+    const targetSection = document.getElementById(targetID);
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
+
+
+
 // Ton code modal ici (inchangé) ...
 
 // Animation apparition au scroll pour la section Education
