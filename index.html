@@ -33,24 +33,30 @@
 
   <footer id="contact">
     <div class="contact-info">
-      <a href="mailto:ton.email@example.com">ton.email@example.com</a>
+      <a href="mailto:dimitri.novareze@etu.ec-lyon.fr">dimitri.novareze@etu.ec-lyon.fr</a>
       <span> | </span>
-      <a href="https://www.linkedin.com/in/tonprofillinkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/dimitri-novareze-445579212/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </div>
     <div class="get-in-touch">
       <button id="contact-button">Get in touch</button>
     </div>
   </footer>
   
-  <!-- Modal simple pour le message -->
-  <div id="contact-modal" class="modal">
+  <!-- Modal de contact -->
+<div id="contact-modal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
       <h3>Send me a message</h3>
-      <form id="contact-form">
-        <input type="text" id="name" name="name" placeholder="Your name" required />
-        <input type="email" id="email" name="email" placeholder="Your email" required />
-        <textarea id="message" name="message" placeholder="Your message" rows="4" required></textarea>
+      <form action="https://formsubmit.co/dimitri.novareze@etu.ec-lyon.fr" method="POST" id="contact-form">
+        <!-- Anti-bot -->
+        <input type="text" name="_honey" style="display:none">
+        <input type="hidden" name="_captcha" value="false">
+        <!-- Redirection après envoi -->
+        <input type="hidden" name="_next" value="https://dimitrinovareze.github.io/merci.html">
+  
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="Your email" required />
+        <textarea name="message" placeholder="Your message" rows="4" required></textarea>
         <button type="submit">Send</button>
       </form>
     </div>
