@@ -4,71 +4,60 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dimitri Novareze - Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: #1a1a1a;
-      color: white;
-      padding: 1.5rem;
-      text-align: center;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-    }
-    h1, h2 {
-      color: #1a1a1a;
-    }
-    .cv-button {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.8rem 1.2rem;
-      background: #0077cc;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    .cv-button:hover {
-      background: #005fa3;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #666;
-    }
-  </style>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet" />
 </head>
 <body>
-
   <header>
-    <h1>Dimitri Novareze</h1>
-    <p>Étudiant ingénieur passionné par la data science et le machine learning</p>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <div class="container">
-    <h2>À propos</h2>
-    <p>
-      Je suis étudiant à Centrale Lyon en année de césure. Mon objectif est de me professionnaliser dans le domaine de la
-      data science et du machine learning. Fort de plusieurs expériences (notamment chez Enedis et EIFER en Allemagne),
-      je suis motivé à appliquer mes compétences à des projets concrets dans des secteurs innovants.
-    </p>
-    <p>
-      Je maîtrise Python, C++, MATLAB, ainsi que plusieurs bibliothèques ML comme Pandas, Scikit-learn, TensorFlow...
-    </p>
-    <a class="cv-button" href="Dimitri_NOVAREZE_CV.pdf" download>Télécharger mon CV</a>
-  </div>
+  <section id="lead">
+    <div id="lead-overlay"></div>
+    <div id="lead-content">
+      <h1>DIMITRI<br>NOVAREZE</h1>
+      <h2>Data Science & ML Enthusiast</h2>
+      <a href="Dimitri_NOVAREZE_CV.pdf" class="btn" download>Télécharger le CV</a>
+    </div>
+  </section>
 
-  <footer>
-    Contact : dimitri.novareze@etu.ec-lyon.fr
+
+  <footer id="contact">
+    <div class="contact-info">
+      <a href="mailto:ton.email@example.com">ton.email@example.com</a>
+      <span> | </span>
+      <a href="https://www.linkedin.com/in/tonprofillinkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+    <div class="get-in-touch">
+      <button id="contact-button">Get in touch</button>
+    </div>
   </footer>
-
+  
+  <!-- Modal simple pour le message -->
+  <div id="contact-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Send me a message</h3>
+      <form id="contact-form">
+        <input type="text" id="name" name="name" placeholder="Your name" required />
+        <input type="email" id="email" name="email" placeholder="Your email" required />
+        <textarea id="message" name="message" placeholder="Your message" rows="4" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+  
+  <script src="js/scripts.js"></script>
 </body>
 </html>
+
+
