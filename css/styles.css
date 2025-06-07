@@ -315,4 +315,101 @@ footer#contact {
     margin: 0;
   }
   
+  /* ==== Experience Section ==== */
+.experience-section {
+    background: #f8f8f8;
+    padding: 6rem 1rem;
+  }
+  
+  .exp-card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+  
+  .exp-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  
+  .exp-card h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #2c3e50;
+  }
+  
+  .exp-subtitle {
+    margin: 0.2rem 0 0;
+    color: #7f8c8d;
+    font-size: 1rem;
+  }
+  
+  .exp-date {
+    color: #7f8c8d;
+    font-size: 0.95rem;
+    white-space: nowrap;
+  }
+  
+  .exp-card p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  /* ==== Projects Section ==== */
+  .projects-section {
+    background: #ffffff;
+    padding: 6rem 1rem;
+  }
+  
+  .projects-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .project-card {
+    background: #f5f5f5;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-card h3 {
+    margin-top: 0;
+    font-size: 1.25rem;
+    color: #2c3e50;
+  }
+  
+  .project-card p {
+    color: #555;
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .project-card .btn {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    font-weight: 500;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+  }
+  
+  .project-card .btn:hover {
+    background-color: #217dbb;
+  }
   
