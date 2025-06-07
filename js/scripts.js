@@ -42,49 +42,20 @@ document.querySelectorAll('.nav-link').forEach(link => {
 });
 
 
-
-const educationSection = document.getElementById('education');
-
-window.addEventListener('scroll', () => {
-  const rect = educationSection.getBoundingClientRect();
-  const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-
-  if (rect.top <= windowHeight * 0.75 && rect.bottom >= 0) {
-    educationSection.classList.add('visible');
-  } else {
-    educationSection.classList.remove('visible');
-  }
-});
-
-
-
-const experienceSection = document.getElementById('experience');
+const sections = ['education', 'experience', 'projects'].map(id => document.getElementById(id));
 
 window.addEventListener('scroll', () => {
-  const rect = experienceSection.getBoundingClientRect();
   const windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
-  if (rect.top <= windowHeight * 0.75 && rect.bottom >= 0) {
-    experienceSection.classList.add('visible');
-  } else {
-    experienceSection.classList.remove('visible');
-  }
+  sections.forEach(section => {
+    if (!section) return;
+    const rect = section.getBoundingClientRect();
+
+    if (rect.top <= windowHeight * 0.75 && rect.bottom >= 0) {
+      section.classList.add('visible');
+    } else {
+      section.classList.remove('visible');
+    }
+  });
 });
-
-
-
-const projectsSection = document.getElementById('projects');
-
-window.addEventListener('scroll', () => {
-  const rect = projectsSection.getBoundingClientRect();
-  const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-
-  // Si la section est visible dans la fenêtre (à ajuster selon le besoin)
-  if (rect.top <= windowHeight * 0.75 && rect.bottom >= 0) {
-    projectsSection.classList.add('visible');
-  } else {
-    projectsSection.classList.remove('visible');
-  }
-});
-
 
