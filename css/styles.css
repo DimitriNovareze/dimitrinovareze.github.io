@@ -328,62 +328,6 @@ footer#contact {
     padding: 6rem 1rem;
   }
   
-  .exp-card {
-    background: white;
-    border: 1px solid #e0e0e0;
-    border-radius: 4px;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-  }
-  
-  .exp-card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
-  }
-  
-  .exp-card h3 {
-    margin: 0;
-    font-size: 1.3rem;
-    color: #2c3e50;
-  }
-  
-  .exp-subtitle {
-    margin: 0.2rem 0 0;
-    color: #7f8c8d;
-    font-size: 1rem;
-  }
-  
-  .exp-date {
-    color: #7f8c8d;
-    font-size: 0.95rem;
-    white-space: nowrap;
-  }
-
-  .exp-card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-  
-  .exp-logo-title {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-  .exp-logo {
-    width: 64px;
-    height: auto;
-    object-fit: contain;
-    flex-shrink: 0;
-  }
-  
   .edu-card {
     display: flex;
     gap: 1.5rem;
