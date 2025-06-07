@@ -49,7 +49,6 @@ window.addEventListener('scroll', () => {
   const rect = educationSection.getBoundingClientRect();
   const windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
-  // Si la section est visible dans la fenêtre (à ajuster selon le besoin)
   if (rect.top <= windowHeight * 0.75 && rect.bottom >= 0) {
     educationSection.classList.add('visible');
   } else {
@@ -65,7 +64,6 @@ window.addEventListener('scroll', () => {
   const rect = experienceSection.getBoundingClientRect();
   const windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
-  // Si la section est visible dans la fenêtre (à ajuster selon le besoin)
   if (rect.top <= windowHeight * 0.75 && rect.bottom >= 0) {
     experienceSection.classList.add('visible');
   } else {
