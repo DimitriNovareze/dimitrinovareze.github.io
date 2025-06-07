@@ -26,3 +26,21 @@ contactNavLink.addEventListener('click', (e) => {
   modal.style.display = 'block';
 });
 
+// Ton code modal ici (inchangé) ...
+
+// Animation apparition au scroll pour la section Education
+document.addEventListener('DOMContentLoaded', () => {
+  const educationSection = document.querySelector('.education-section');
+
+  function revealOnScroll() {
+    if (!educationSection) return; // sécurité si l'élément n'existe pas
+    const rect = educationSection.getBoundingClientRect();
+    if (rect.top < window.innerHeight * 0.85) {
+      educationSection.classList.add('visible');
+      window.removeEventListener('scroll', revealOnScroll);
+    }
+  }
+
+  window.addEventListener('scroll', revealOnScroll);
+  revealOnScroll();  // check au chargement au cas où c'est déjà visible
+});
