@@ -329,11 +329,14 @@ footer#contact {
   }
   
   .exp-card {
+    display: flex;
+    gap: 1.5rem;
     background: white;
     border: 1px solid #e0e0e0;
-    border-radius: 4px;
+    border-radius: 6px;
     padding: 2rem;
     margin-bottom: 2rem;
+    align-items: flex-start;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
   }
   
