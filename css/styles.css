@@ -273,11 +273,28 @@ footer#contact {
     border-radius: 3px;
   }
   
-  /* Container */
+
+  
   .education-section {
-    background: #fff;
-    padding: 3rem 1rem;
+    padding: 4rem 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
   }
+  
+  .education-section:nth-of-type(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .education-section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #2980b9;
+    margin: 0.5rem auto 0;
+    border-radius: 3px;
+  }
+
   
   .container {
     max-width: 900px;
@@ -434,3 +451,5 @@ footer#contact {
     background-color: #217dbb;
   }
   
+
+ 
