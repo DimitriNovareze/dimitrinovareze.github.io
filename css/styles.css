@@ -279,6 +279,35 @@ footer#contact {
 }
 
   
+.experience-section {
+    padding: 4rem 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.experience-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.projects-section {
+    padding: 4rem 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.projects-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
   .section:nth-of-type(even) {
     background-color: #f9f9f9;
   }
@@ -398,10 +427,7 @@ footer#contact {
   }
   
   /* ==== Projects Section ==== */
-  .projects-section {
-    background: #ffffff;
-    padding: 6rem 1rem;
-  }
+
   
   .projects-grid {
     display: grid;
