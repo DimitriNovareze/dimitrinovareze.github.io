@@ -335,11 +335,8 @@ footer#contact {
     margin: 0;
   }
   
-  /* ==== Experience Section ==== */
-.experience-section {
-    background: #f8f8f8;
-    padding: 3rem 1rem;
-  }
+
+
   
   .exp-card {
     display: flex;

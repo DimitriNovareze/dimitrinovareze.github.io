@@ -28,33 +28,32 @@ contactNavLink.addEventListener('click', (e) => {
 
 
 document.querySelectorAll('.nav-link').forEach(link => {
-  link.addEventListener('click', (e) => {
-    e.preventDefault();
-    const targetID = link.getAttribute('href').substring(1); // enlève le #
-    const targetSection = document.getElementById(targetID);
-    if (targetSection) {
-      targetSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  });
-});
-
-
-
-// Ton code modal ici (inchangé) ...
-
-// Animation apparition au scroll pour la section Education
-document.addEventListener('DOMContentLoaded', () => {
-  const educationSection = document.querySelector('.education-section');
-
-  function revealOnScroll() {
-    if (!educationSection) return; // sécurité si l'élément n'existe pas
-    const rect = educationSection.getBoundingClientRect();
-    if (rect.top < window.innerHeight * 0.85) {
-      educationSection.classList.add('visible');
-      window.removeEventListener('scroll', revealOnScroll);
-    }
+  // On exclut le lien dont l'id est 'contact-nav-link'
+  if (link.id !== 'contact-nav-link') {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetID = link.getAttribute('href').substring(1);
+      const targetSection = document.getElementById(targetID);
+      if (targetSection) {
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
   }
-
-  window.addEventListener('scroll', revealOnScroll);
-  revealOnScroll();  // check au chargement au cas où c'est déjà visible
 });
+
+
+
+const educationSection = document.getElementById('education');
+
+window.addEventListener('scroll', () => {
+  const rect = educationSection.getBoundingClientRect();
+  const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+  // Si la section est visible dans la fenêtre (à ajuster selon le besoin)
+  if (rect.top <= windowHeight * 0.75 && rect.bottom >= 0) {
+    educationSection.classList.add('visible');
+  } else {
+    educationSection.classList.remove('visible');
+  }
+});
+
