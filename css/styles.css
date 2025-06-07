@@ -225,15 +225,36 @@ footer#contact {
     background-color: #217dbb;
   }
   
-
   .about-section {
-    padding: 2rem 0;
+    padding: 3rem 1rem;
+    background-color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
   }
   
-  .about-left p {
+  .about-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .about-title {
+    flex: 0 0 150px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #444;
+    margin-top: 0.3rem;
+  }
+  
+  .about-text {
+    flex: 1;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #555;
     max-width: 600px;
-    line-height: 1.4;
-    font-size: 1rem;
   }
   
   
