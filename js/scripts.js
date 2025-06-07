@@ -17,3 +17,12 @@ window.addEventListener('click', (e) => {
   }
 });
 
+
+// Clic sur le lien "Contact" de la navbar
+const contactNavLink = document.getElementById('contact-nav-link');
+
+contactNavLink.addEventListener('click', (e) => {
+  e.preventDefault(); // Évite le scroll vers le bas
+  modal.style.display = 'block';
+});
+
