@@ -26,7 +26,7 @@ body {
     position: relative; /* <- surtout PAS fixed ou sticky */
     z-index: 1000;
   }
-  
+
   .nav-links {
     list-style: none;
     display: flex;
@@ -369,6 +369,26 @@ footer#contact {
     color: #7f8c8d;
     font-size: 0.95rem;
     white-space: nowrap;
+  }
+
+  .exp-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .exp-logo-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .exp-logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
   }
   
   .edu-card {
