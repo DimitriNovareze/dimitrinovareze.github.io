@@ -42,23 +42,8 @@ document.querySelectorAll('.nav-link').forEach(link => {
 });
 
 
+// Gestion unifiée de l'animation au scroll pour plusieurs sections
 const sections = ['education', 'experience', 'projects'].map(id => document.getElementById(id));
-
-window.addEventListener('scroll', () => {
-  const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-
-  sections.forEach(section => {
-    if (!section) return;
-    const rect = section.getBoundingClientRect();
-
-    if (rect.top <= windowHeight * 0.75 && rect.bottom >= 0) {
-      section.classList.add('visible');
-    } else {
-      section.classList.remove('visible');
-    }
-  });
-});
-
 
 function handleScroll() {
   const windowHeight = window.innerHeight || document.documentElement.clientHeight;
@@ -76,6 +61,4 @@ function handleScroll() {
 }
 
 window.addEventListener('scroll', handleScroll);
-window.addEventListener('load', handleScroll);  // appel au chargement
-
-
+window.addEventListener('load', handleScroll); // pour appliquer au chargement aussi
