@@ -28,7 +28,7 @@ contactNavLink.addEventListener('click', (e) => {
 
 
 // Gestion unifiée de l'animation au scroll pour plusieurs sections
-const sections = document.querySelectorAll('.education-section, .experience-section, .projects-section');
+const sections = document.querySelectorAll('section');
 
 function handleScroll() {
   const windowHeight = window.innerHeight || document.documentElement.clientHeight;
