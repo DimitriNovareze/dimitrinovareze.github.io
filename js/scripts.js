@@ -44,6 +44,3 @@ function checkSections() {
 
 window.addEventListener('scroll', checkSections);
 window.addEventListener('load', checkSections); 
-window.addEventListener('scroll', handleScroll);
-window.addEventListener('load', handleScroll); // pour appliquer au chargement aussi
-
