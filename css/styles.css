@@ -266,11 +266,7 @@ footer#contact {
     position: relative;
     color: #2c3e50;
   }
-  
-  .section:nth-of-type(even) {
-    background-color: #f9f9f9;
-  }
- 
+
   .section-title::after {
     content: '';
     display: block;
@@ -311,7 +307,6 @@ footer#contact {
 
 
 .projects-section {
-    background-color: yellow;
     position: relative;
   opacity: 0;
   transform: translateY(40px);
