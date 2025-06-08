@@ -44,3 +44,24 @@ function checkSections() {
 
 window.addEventListener('scroll', checkSections);
 window.addEventListener('load', checkSections); 
+
+
+function checkSections() {
+  const sections = ['education', 'experience', 'projects'].map(id => document.getElementById(id));
+
+  console.clear();
+  console.log('Window height:', window.innerHeight);
+
+  sections.forEach(section => {
+    const rect = section.getBoundingClientRect();
+    console.log(`${section.id} top:`, rect.top);
+
+    if(rect.top < window.innerHeight - 100) {
+      section.classList.add('visible');
+      console.log(`${section.id} visible`);
+    } else {
+      section.classList.remove('visible');
+      console.log(`${section.id} hidden`);
+    }
+  });
+}
