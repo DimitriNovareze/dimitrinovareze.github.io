@@ -81,8 +81,14 @@ body {
     }
   
     .burger {
-      display: block;
-    }
+        display: block;
+        align-self: flex-end;
+        font-size: 1.8rem;
+        background: none;
+        border: none;
+        color: white; /* pour qu’on le voie bien sur fond foncé */
+        cursor: pointer;
+      }
   
     .nav-links {
       display: none;
