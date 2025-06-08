@@ -15,7 +15,7 @@ body {
   }
   
 .navbar {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 50%;              /* pour centrer horizontalement */
     transform: translateX(-50%);
