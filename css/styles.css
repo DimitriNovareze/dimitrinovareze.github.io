@@ -122,6 +122,10 @@ body {
     .burger-menu {
       display: flex;
     }
+
+    .burger-dropdown.open {
+        display: flex;
+      }
     .navbar {
       display: none;
     }
