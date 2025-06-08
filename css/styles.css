@@ -16,7 +16,7 @@ body {
     height: 44px;
     padding: 0 1.5rem;
     border-radius: 22px;
-    background: rgba(255, 255, 255, 0.1);           /* semi-transparent */
+    background: rgba(255, 255, 255, 0.941);           /* semi-transparent */
     backdrop-filter: blur(10px);                   /* flou derrière */
     -webkit-backdrop-filter: blur(10px);           /* flou sur Safari */
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);         /* petite ombre douce */
@@ -51,7 +51,7 @@ body {
   }
   
   .nav-links li a:hover {
-    color: #3498db;
+    color: white;
     transform: scale(1.05);
   }
   
