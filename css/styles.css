@@ -6,6 +6,7 @@ body {
   }
   
 
+  
   .navbar {
     position: sticky    ;
     top: 10px;
@@ -76,7 +77,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: black;
     text-align: center;
     z-index: 2;
   }
@@ -88,10 +88,6 @@ body {
     margin: 0;
     line-height: 1.1;
     letter-spacing: 2px;
-    font-size: clamp(2rem, 8vw, 4rem);
-    word-break: break-word;
-    overflow-wrap: break-word;
-    max-width: 100%;
   }
   
   #lead-content h2 {
@@ -380,10 +376,6 @@ body {
     border: 1px solid #e0e0e0;
     border-radius: 6px;
     padding: 2rem;
-    flex-wrap: wrap;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    max-width: 100%;
     margin-bottom: 2rem;
     align-items: flex-start;
     box-shadow: 0 2px 6px rgba(0,0,0,0.05);
@@ -395,10 +387,6 @@ body {
     gap: 1.5rem;
     background: white;
     border: 1px solid #e0e0e0;
-    flex-wrap: wrap;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    max-width: 100%;
     padding: 2rem;
     border-radius: 6px;
     margin-bottom: 2rem;
@@ -486,4 +474,3 @@ body {
   .project-card .btn:hover {
     background-color: #217dbb;
   }
-  
