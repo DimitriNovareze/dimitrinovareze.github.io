@@ -28,7 +28,7 @@ contactNavLink.addEventListener('click', (e) => {
 
 
 // Gestion unifiée de l'animation au scroll pour plusieurs sections
-const sections = ['education', 'experience', 'projects'].map(id => document.getElementById(id));
+const sections = document.querySelectorAll('.education-section, .experience-section, .projects-section');
 
 function handleScroll() {
   const windowHeight = window.innerHeight || document.documentElement.clientHeight;
@@ -47,13 +47,4 @@ function handleScroll() {
 
 window.addEventListener('scroll', handleScroll);
 window.addEventListener('load', handleScroll); // pour appliquer au chargement aussi
-
-
-const burger = document.querySelector('.burger');
-const navLinks = document.querySelector('.nav-links');
-
-burger.addEventListener('click', () => {
-  burger.classList.toggle('open');
-  navLinks.classList.toggle('open');
-});
 
