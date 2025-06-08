@@ -470,7 +470,7 @@ body {
     }
   
     .edu-subtitle {
-        align-content: center;
+        text-align: center;
         margin: 0.2rem 0 0;
         color: #7f8c8d;
         font-size: 1rem;
