@@ -27,12 +27,12 @@ contactNavLink.addEventListener('click', (e) => {
 });
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  const burgerBtn = document.getElementById("burger-btn");
+  const burgerDropdown = document.getElementById("burger-dropdown");
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const burger = document.querySelector(".burger");
-    const navLinks = document.querySelector(".nav-links");
-
-    burger.addEventListener("click", function () {
-      navLinks.classList.toggle("open");
-    });
+  burgerBtn.addEventListener("click", () => {
+    const isOpen = burgerDropdown.style.display === "flex";
+    burgerDropdown.style.display = isOpen ? "none" : "flex";
   });
+});
