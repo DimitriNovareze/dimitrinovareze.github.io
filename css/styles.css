@@ -406,7 +406,6 @@ body {
     font-weight: 500;
   }
 
-
   @media (max-width: 768px) {
     .edu-card {
       flex-direction: column;
@@ -417,6 +416,8 @@ body {
     .edu-card-header {
       flex-direction: column;
       align-items: center;
+      width: 100%;
+      margin-bottom: 1rem;
     }
   
     .edu-logo {
@@ -425,6 +426,30 @@ body {
   
     .edu-content {
       width: 100%;
+    }
+  
+    .edu-header {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .edu-header h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .edu-subtitle {
+      margin: 0.25rem 0;
+    }
+  
+    .edu-date {
+      margin-bottom: 1rem;
+    }
+  
+    .edu-card p {
+      text-align: justify; /* tu peux mettre center si tu préfères */
     }
   }
   
