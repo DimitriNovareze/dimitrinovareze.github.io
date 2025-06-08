@@ -59,53 +59,71 @@ body {
   }
 
 
-/* Menu burger caché sur desktop */
-.burger {
-    display: none;
-    font-size: 1.8rem;
-    cursor: pointer;
-    color: #333;
+/* ------------------ */
+/* Burger menu mobile */
+.burger-menu {
+    display: none; /* caché desktop */
+    position: sticky;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 22px;
+    padding: 0.4rem 1rem;
+    width: 90vw;
+    max-width: 400px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 10000;
+    flex-direction: column;
+    align-items: center;
   }
   
-
-/* MOBILE : menu burger visible, menu caché */
-@media (max-width: 768px) {
-    .burger {
-      display: block;
-    }
-
-    .navbar {
-       display : none;
-      }
-      
+  #burger-btn {
+    font-size: 1.5rem;
+    background: transparent;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    padding: 0.3rem 0;
+  }
   
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      background: rgba(30,30,30,0.9);
-      position: absolute;
-      top: 60px; /* en dessous de la navbar */
-      left: 50%;
-      transform: translateX(-50%);
-      width: 90%;
-      border-radius: 10px;
-      padding: 1rem 0;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-      z-index: 9999;
-    }
+  /* Menu déroulant burger */
+  .burger-dropdown {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+    display: none;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
   
-    .nav-links.open {
+  .burger-dropdown li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    background: rgba(30,30,30,0.9);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+  }
+  
+  .burger-dropdown li a:hover {
+    background: #3498db;
+  }
+  
+  /* ------------------ */
+  /* Media queries */
+  
+  /* Mobile : on affiche burger, on cache navbar */
+  @media (max-width: 768px) {
+    .burger-menu {
       display: flex;
     }
-  
-    .nav-links li {
-      padding: 0.8rem 1.5rem;
-    }
-  
-    .nav-links li a {
-      color: white;
-      font-weight: 600;
-      font-size: 1.1rem;
+    .navbar {
+      display: none;
     }
   }
   #lead {
