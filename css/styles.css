@@ -231,11 +231,6 @@ footer#contact {
     font-family: 'Montserrat', sans-serif;
   }
   
-  .about-section {
-    padding: 3rem 1rem;
-    background: white;
-    font-family: 'Montserrat', sans-serif;
-  }
   
   .about-section .section-title {
     text-align: center;
@@ -252,10 +247,10 @@ footer#contact {
     text-align: justify;
   }
   
-  
   .section {
     padding: 4rem 1rem;
     border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0; /* ligne en bas */
     background: white;
   }
   
@@ -272,6 +267,19 @@ footer#contact {
     color: #2c3e50;
   }
   
+  .section:nth-of-type(even) {
+    background-color: #f9f9f9;
+  }
+ 
+  .section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(to right, #3498db, #2980b9);
+    margin: 0.5rem auto 2rem;
+    border-radius: 2px;
+  }
 
   .education-section {
     position: relative;
@@ -314,19 +322,7 @@ footer#contact {
   transform: translateY(0);
 }
 
-  .section:nth-of-type(even) {
-    background-color: #f9f9f9;
-  }
-  
-  .section-title::after {
-    content: '';
-    display: block;
-    width: 80px;
-    height: 4px;
-    background: linear-gradient(to right, #3498db, #2980b9);
-    margin: 0.5rem auto 2rem;
-    border-radius: 2px;
-  }
+ 
   
 
   
