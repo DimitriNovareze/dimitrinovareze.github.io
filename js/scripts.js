@@ -49,12 +49,11 @@ window.addEventListener('scroll', handleScroll);
 window.addEventListener('load', handleScroll); // pour appliquer au chargement aussi
 
 
-<script>
-  const burger = document.querySelector('.burger');
-  const navLinks = document.querySelector('.nav-links');
+const burger = document.querySelector('.burger');
+const navLinks = document.querySelector('.nav-links');
 
-  burger.addEventListener('click', () => {
-    burger.classList.toggle('open');
-    navLinks.classList.toggle('open');
-  });
-</script>
+burger.addEventListener('click', () => {
+  burger.classList.toggle('open');
+  navLinks.classList.toggle('open');
+});
+
