@@ -27,30 +27,25 @@ contactNavLink.addEventListener('click', (e) => {
 });
 
 
-const sections = ['education', 'experience', 'projects'].map(id => document.getElementById(id));
+function checkSections() {
+  const sections = ['education', 'experience', 'projects'].map(id => document.getElementById(id));
 
-const observerOptions = {
-  root: null,
-  rootMargin: '0px 0px -100px 0px',
-  threshold: 0
-};
+  sections.forEach(section => {
+    if (!section) return; // sécurité
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting) {
-      entry.target.classList.add('visible');
+    const rect = section.getBoundingClientRect();
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+    // Si la section est visible dans la fenêtre (marge 150px pour déclencher tôt)
+    if (rect.top <= windowHeight - 150 && rect.bottom >= 150) {
+      section.classList.add('visible');
     } else {
-      entry.target.classList.remove('visible');
+      section.classList.remove('visible');
     }
   });
-}, observerOptions);
-
-sections.forEach(section => {
-  observer.observe(section);
-});
-
-
-function checkSections() {
-  console.log('checkSections called');
-  // Ton code
 }
+
+// On écoute scroll ET resize (pour s'adapter au redimensionnement écran)
+window.addEventListener('scroll', checkSections);
+window.addEventListener('resize', checkSections);
+window.addEventListener('load', checkSections);
