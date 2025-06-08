@@ -14,17 +14,24 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
   
-/* NAVBAR – version discrète et non sticky */
 .navbar {
-    background-color: transparent;      
-    box-shadow: none;
-    padding: 1rem 2rem;
-    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 50%;              /* pour centrer horizontalement */
+    transform: translateX(-50%);
+    width: 320px;           /* largeur fixe plus compacte */
+    height: 40px;           /* hauteur plus petite */
+    background-color: rgba(255, 255, 255, 0.9); /* blanc translucide */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 20px;    /* arrondir les bords */
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* <- surtout PAS fixed ou sticky */
     z-index: 1000;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 1rem;
+    backdrop-filter: blur(10px); /* effet flou derrière (optionnel) */
+    -webkit-backdrop-filter: blur(10px); /* support Safari */
   }
 
   .nav-links {
