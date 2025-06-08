@@ -19,7 +19,7 @@ body {
     top: 0;
     left: 50%;              /* pour centrer horizontalement */
     transform: translateX(-50%);
-    width: 320px;           /* largeur fixe plus compacte */
+    width: 400px;           /* largeur fixe plus compacte */
     height: 40px;           /* hauteur plus petite */
     background-color: rgba(255, 255, 255, 0.9); /* blanc translucide */
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -28,33 +28,39 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    overflow: hidden; 
     font-family: 'Montserrat', sans-serif;
     padding: 0 1rem;
     backdrop-filter: blur(10px); /* effet flou derrière (optionnel) */
     -webkit-backdrop-filter: blur(10px); /* support Safari */
   }
 
-  .nav-links {
+/* Eviter que les liens dépassent */
+.nav-links {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     margin: 0;
     padding: 0;
+    font-size: 0.9rem;
+    overflow: hidden;
+    white-space: nowrap;  /* pour éviter retour à la ligne */
   }
+  
   
   .nav-links li a {
     text-decoration: none;
-    color: #666;
-    font-weight: 400;
-    font-size: 0.95rem;
+    color: #333;
+    font-weight: 500;
+    padding: 0.2rem 0.6rem;
     transition: color 0.3s ease, transform 0.2s ease;
+    white-space: nowrap;
   }
   
   .nav-links li a:hover {
     color: #3498db;
     transform: scale(1.05);
   }
-  
   
   #lead {
     height: 100vh;
