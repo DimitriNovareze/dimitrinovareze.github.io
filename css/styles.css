@@ -405,7 +405,9 @@ body {
     }
   
     .edu-logo {
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
+      width: 64px;
+      height: auto;
     }
   
     .edu-content {
