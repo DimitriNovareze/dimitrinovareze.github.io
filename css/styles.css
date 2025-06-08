@@ -194,8 +194,10 @@ body {
     z-index: 2;
   }
   #lead-content h1 {
-    font-size: clamp(2rem, 8vw, 4rem);
+    font-size: clamp(2rem, 10vw, 4rem);
     word-break: break-word;
+    color: white;
+    font-weight: 900;
     overflow-wrap: break-word;
     max-width: 100%;
   }
@@ -483,10 +485,6 @@ body {
   
   .exp-card {
     display: flex;
-    flex-wrap: wrap;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    max-width: 100%;
     gap: 1.5rem;
     background: white;
     border: 1px solid #e0e0e0;
@@ -500,10 +498,6 @@ body {
   
   .edu-card {
     display: flex;
-    flex-wrap: wrap;
-  word-break: break-word;
-  overflow-wrap: break-word;
-  max-width: 100%;
     gap: 1.5rem;
     background: white;
     border: 1px solid #e0e0e0;
