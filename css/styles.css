@@ -58,6 +58,11 @@ body {
     transform: scale(1.05);
   }
 
+  .burger {
+    display: none; /* par défaut : caché partout */
+  }
+  
+
 
   /* ------ Responsive mobile ------ */
 @media (max-width: 768px) {
