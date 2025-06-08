@@ -48,3 +48,9 @@ const observer = new IntersectionObserver((entries) => {
 sections.forEach(section => {
   observer.observe(section);
 });
+
+
+function checkSections() {
+  console.log('checkSections called');
+  // Ton code
+}
