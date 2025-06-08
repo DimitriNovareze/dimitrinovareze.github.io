@@ -213,13 +213,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
 
 <script>
-  $(document).ready(function () {
-    $(".button-collapse").sideNav({
-      menuWidth: 190, // largeur menu
-      edge: "left",   // côté gauche pour le menu
-      closeOnClick: true // ferme menu au clic sur lien (utile)
-    });
-  });
+ $(".button-collapse").sideNav({
+  menuWidth: 100,   // un peu plus large pour visibilité
+  edge: 'left',     // ou 'right' si tu veux qu'il vienne de droite
+  closeOnClick: true
+});
 </script>
 
 </body>
