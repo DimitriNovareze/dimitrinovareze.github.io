@@ -36,49 +36,6 @@ body {
   }
   
 
-  @media (max-width: 768px) {
-    .section {
-      padding: 2rem 1rem;
-    }
-  
-    .section-title {
-      font-size: 1.75rem;
-    }
-  
-    #lead-content h1 {
-      font-size: 2rem;
-      font-weight: 700;
-    }
-  
-    #lead-content h2 {
-      font-size: 1.1rem;
-    }
-  
-    .edu-card, .exp-card {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .edu-logo {
-      width: 48px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .projects-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  @media (max-width: 768px) {
-    footer#contact {
-      flex-direction: column;
-      gap: 0.5rem;
-      padding: 0.8rem;
-      text-align: center;
-    }
-  }
-  
 
 /* Eviter que les liens dépassent */
 .nav-links {
