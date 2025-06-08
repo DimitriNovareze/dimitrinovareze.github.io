@@ -6,10 +6,6 @@ body {
   }
   
 
-  html, body {
-    width: 100%;
-    overflow-x: hidden; /* évite le scroll horizontal */
-  }
   .navbar {
     position: sticky    ;
     top: 10px;
