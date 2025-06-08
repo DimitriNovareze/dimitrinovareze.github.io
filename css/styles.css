@@ -469,8 +469,11 @@ body {
     }
   
     .edu-subtitle {
-      margin: 0.25rem 0;
-    }
+        margin: 0.2rem 0 0;
+        color: #2c3e50;         /* plus foncé qu'avant */
+        font-size: 1.05rem;     /* un poil plus grand */
+        font-weight: 600;       /* gras mais pas trop (500 = moyen, 600 = semi-bold) */
+      }
   
     .edu-date {
       margin-bottom: 1rem;
