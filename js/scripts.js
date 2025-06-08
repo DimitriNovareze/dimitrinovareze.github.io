@@ -32,7 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const burgerDropdown = document.getElementById("burger-dropdown");
 
   burgerBtn.addEventListener("click", () => {
-    const isOpen = burgerDropdown.style.display === "flex";
-    burgerDropdown.style.display = isOpen ? "none" : "flex";
+    burgerDropdown.classList.toggle("open");
   });
 });
