@@ -15,9 +15,10 @@
   <section id="lead">
       
 <nav class="navbar">
-    <a href="#" data-activates="mobile-menu" class="button-collapse">
+    <a href="#" data-activates="mobile-menu" class="button-collapse burger-menu">
         <i class="material-icons">menu</i>
       </a>
+      
     <ul class="nav-links">
         <li><a href="#about">À propos</a></li>
         <li><a href="#experience">Experience</a></li>
@@ -213,11 +214,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
 
 <script>
- $(".button-collapse").sideNav({
-  menuWidth: 100,   // un peu plus large pour visibilité
-  edge: 'left',     // ou 'right' si tu veux qu'il vienne de droite
+$(".burger-menu").sideNav({
+  menuWidth: 100,
+  edge: "left",
   closeOnClick: true
 });
+
 </script>
 
 </body>
