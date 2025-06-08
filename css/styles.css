@@ -73,6 +73,11 @@ body {
     .burger {
       display: block;
     }
+
+    .navbar {
+       display : none;
+      }
+      
   
     .nav-links {
       display: none;
