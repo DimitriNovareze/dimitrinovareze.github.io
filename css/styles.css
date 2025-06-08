@@ -253,6 +253,14 @@ footer#contact {
   }
   
   
+  .section {
+    padding: 4rem 1rem;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .section:first-of-type {
+    border-top: none;
+  }
   
 /* Section title */
 .section-title {
@@ -265,8 +273,6 @@ footer#contact {
   
 
   .education-section {
-    padding: 4rem 1rem;
-    border-bottom: 1px solid #e0e0e0;
     position: relative;
   opacity: 0;
   transform: translateY(40px);
@@ -279,15 +285,9 @@ footer#contact {
 }
 
 
-.section:nth-of-type(even) {
-    background-color: #f9f9f9;
-  }
-  
 
   
 .experience-section {
-    padding: 4rem 1rem;
-    border-bottom: 1px solid #e0e0e0;
     position: relative;
   opacity: 0;
   transform: translateY(40px);
@@ -300,15 +300,8 @@ footer#contact {
 }
 
 
-.section:nth-of-type(even) {
-    background-color: #f9f9f9;
-  }
-  
-
 
 .projects-section {
-    padding: 4rem 1rem;
-    border-bottom: 1px solid #e0e0e0;
     position: relative;
   opacity: 0;
   transform: translateY(40px);
