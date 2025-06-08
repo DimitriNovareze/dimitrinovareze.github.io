@@ -54,7 +54,7 @@ body {
   }
   
   .nav-links li a:hover {
-    color: #3498db;
+    color: white;
     transform: scale(1.05);
   }
   
