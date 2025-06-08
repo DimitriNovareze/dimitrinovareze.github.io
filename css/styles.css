@@ -21,7 +21,7 @@ body {
     transform: translateX(-50%);
     width: 400px;           /* largeur fixe plus compacte */
     height: 40px;           /* hauteur plus petite */
-    background-color: rgba(255, 255, 255, 0.9); /* blanc translucide */
+    background-color: rgba(0, 0, 0, 0.9); /* blanc translucide */
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     border-radius: 20px;    /* arrondir les bords */
     display: flex;
