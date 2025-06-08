@@ -114,14 +114,14 @@ body {
     color: #3498db;
   }
   
-
-/* Footer fixed en bas */
-footer#contact {
+  footer#contact {
     position: fixed;
     bottom: 0;
-    left: 0; /* Ajouté pour s'assurer qu'il part bien du bord gauche */
+    left: 0;
     width: 100%;
-    background-color: #f5f5f5;
+    background: rgba(255, 255, 255, 0.05);   /* semi-transparent */
+    backdrop-filter: blur(10px);             /* effet flou */
+    -webkit-backdrop-filter: blur(10px);
     color: #666;
     font-size: 0.9rem;
     display: flex;
@@ -131,9 +131,14 @@ footer#contact {
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
     font-family: 'Montserrat', sans-serif;
     z-index: 1001;
-    box-sizing: border-box; /* important pour que le padding n'ajoute pas de largeur */
-}
-
+    box-sizing: border-box;
+    transition: background 0.3s ease;        /* transition douce */
+  }
+  
+  footer#contact:hover {
+    background: #f5f5f5;                     /* couleur actuelle au survol */
+  }
+  
   
   footer#contact a {
     color: #666;
