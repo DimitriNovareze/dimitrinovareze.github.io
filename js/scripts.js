@@ -27,17 +27,16 @@ contactNavLink.addEventListener('click', (e) => {
 });
 
 
-function checkSections() {
-  const sections = ['education', 'experience', 'projects'].map(id => document.getElementById(id));
+const sections = ['education', 'experience', 'projects'].map(id => document.getElementById(id));
+
+function handleScroll() {
+  const windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
   sections.forEach(section => {
-    if (!section) return; // sécurité
-
+    if (!section) return;
     const rect = section.getBoundingClientRect();
-    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
-    // Si la section est visible dans la fenêtre (marge 150px pour déclencher tôt)
-    if (rect.top <= windowHeight - 150 && rect.bottom >= 150) {
+    if (rect.top <= windowHeight * 0.75 && rect.bottom >= 0) {
       section.classList.add('visible');
     } else {
       section.classList.remove('visible');
@@ -45,7 +44,7 @@ function checkSections() {
   });
 }
 
-// On écoute scroll ET resize (pour s'adapter au redimensionnement écran)
-window.addEventListener('scroll', checkSections);
-window.addEventListener('resize', checkSections);
-window.addEventListener('load', checkSections);
+window.addEventListener('scroll', handleScroll);
+window.addEventListener('load', handleScroll); // pour appliquer au chargement aussi
+
+
