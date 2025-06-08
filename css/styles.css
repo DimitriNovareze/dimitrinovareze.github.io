@@ -28,16 +28,7 @@ body {
     height: 44px;
   }
   
-  .nav-links li a {
-    color: #333;
-    font-weight: 500;
-    padding: 0.2rem 0.6rem;
-    text-decoration: none;
-  }
-  
-  .nav-links li a:hover {
-    color: white;
-  }
+
   
   .side-nav {
     background-color: #222; /* exemple pour contraste */
@@ -50,6 +41,38 @@ body {
   }
   
   
+
+/* Eviter que les liens dépassent */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    font-size: 0.9rem;
+    overflow: hidden;
+    white-space: nowrap;  /* pour éviter retour à la ligne */
+  }
+  
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 0.2rem 0.6rem;
+    transition: color 0.3s ease, transform 0.2s ease;
+    white-space: nowrap;
+  }
+  
+  .nav-links li a:hover {
+    color: white;
+    transform: scale(1.05);
+  }
+
+
+
+
+
   #lead {
     height: 100vh;
     position: relative;
