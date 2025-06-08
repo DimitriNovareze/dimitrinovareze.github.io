@@ -46,7 +46,8 @@ body {
     }
   
     #lead-content h1 {
-      font-size: 2rem;font-weight: 700;
+      font-size: 2rem;
+      font-weight: 700;
     }
   
     #lead-content h2 {
@@ -110,14 +111,13 @@ body {
     height: 100vh;
     position: relative;
     max-width: 100%;
-    display: block;
     background: url('../image/new_background.jpg') center/cover no-repeat;
 
   }
   
   #lead-overlay {
     position: absolute;
-    background-color: rgba(33, 125, 187, 0.8);
+    background-color: rgba(33, 125, 187, 0.8);  
     width: 100%;
     height: 100%;
     top: 0;
@@ -380,159 +380,158 @@ body {
   transform: translateY(0);
 }
   
-  .container {
-    max-width: 900px;
-    margin: auto;
-  }
+.container {
+max-width: 900px;
+margin: auto;
+}
   
 
-  
-  .edu-card-header {
-    display: flex;
-    justify-content: space-between;
+
+.edu-card-header {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+flex-wrap: wrap;
+margin-bottom: 1rem;
+}
+
+.edu-card h3 {
+margin: 0;
+font-size: 1.3rem;
+color: #2c3e50;
+}
+
+.edu-subtitle {
+margin: 0.2rem 0 0;
+color: #7f8c8d;
+font-size: 1rem;
+}
+
+.edu-date {
+color: #7f8c8d;
+font-size: 0.95rem;
+white-space: nowrap;
+}
+
+.edu-card p {
+color: #555;
+font-size: 1rem;
+line-height: 1.6;
+margin: 0;
+}
+
+
+.exp-card {
+display: flex;
+gap: 1.5rem;
+background: white;
+border: 1px solid #e0e0e0;
+border-radius: 6px;
+padding: 2rem;
+margin-bottom: 2rem;
+align-items: flex-start;
+box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+@media (max-width: 600px) {
+.exp-card, .edu-card {
+    padding: 1rem;
+    flex-direction: column;
     align-items: flex-start;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
-  }
-  
-  .edu-card h3 {
-    margin: 0;
-    font-size: 1.3rem;
-    color: #2c3e50;
-  }
-  
-  .edu-subtitle {
-    margin: 0.2rem 0 0;
-    color: #7f8c8d;
-    font-size: 1rem;
-  }
-  
-  .edu-date {
-    color: #7f8c8d;
-    font-size: 0.95rem;
-    white-space: nowrap;
-  }
-  
-  .edu-card p {
-    color: #555;
-    font-size: 1rem;
-    line-height: 1.6;
-    margin: 0;
-  }
+}
+}
 
-  
-  .exp-card {
-    display: flex;
-    gap: 1.5rem;
-    background: white;
-    border: 1px solid #e0e0e0;
-    border-radius: 6px;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    align-items: flex-start;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  }
-  
-  @media (max-width: 600px) {
-    .exp-card, .edu-card {
-      padding: 1rem;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  }
-  
-  .edu-card {
-    display: flex;
-    gap: 1.5rem;
-    background: white;
-    border: 1px solid #e0e0e0;
-    padding: 2rem;
-    border-radius: 6px;
-    margin-bottom: 2rem;
-    align-items: flex-start;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  }
-  
-  .edu-logo {
-    width: 64px;
-    height: auto;
-    object-fit: contain;
-    flex-shrink: 0;
-  }
-  
-  .edu-content {
-    flex: 1;
-  }
-  
-  .edu-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .edu-header h3 {
-    margin: 0;
-    font-size: 1.25rem;
-    color: #2c3e50;
-  }
-  
-  .edu-date {
-    color: #7f8c8d;
-    font-size: 0.95rem;
-  }
-  
-  .edu-subtitle {
-    margin: 0.5rem 0;
-    color: #3498db;
-    font-weight: 500;
-  }
-  
-  /* ==== Projects Section ==== */
+.edu-card {
+display: flex;
+gap: 1.5rem;
+background: white;
+border: 1px solid #e0e0e0;
+padding: 2rem;
+border-radius: 6px;
+margin-bottom: 2rem;
+align-items: flex-start;
+box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
 
-  
-  .projects-grid {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: 1fr 1fr;
-  }
-  
-  .project-card {
-    background: #f5f5f5;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease;
-  }
-  
-  .project-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .project-card h3 {
-    margin-top: 0;
-    font-size: 1.25rem;
-    color: #2c3e50;
-  }
-  
-  .project-card p {
-    color: #555;
-    font-size: 1rem;
-    margin: 1rem 0;
-  }
-  
-  .project-card .btn {
-    background-color: #3498db;
-    border: none;
-    color: white;
-    font-weight: 500;
-    padding: 0.5rem 1.5rem;
-    border-radius: 25px;
-    text-decoration: none;
-  }
-  
-  .project-card .btn:hover {
-    background-color: #217dbb;
-  }
-  
+.edu-logo {
+width: 64px;
+height: auto;
+object-fit: contain;
+flex-shrink: 0;
+}
 
- 
+.edu-content {
+flex: 1;
+}
+
+.edu-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.edu-header h3 {
+margin: 0;
+font-size: 1.25rem;
+color: #2c3e50;
+}
+
+.edu-date {
+color: #7f8c8d;
+font-size: 0.95rem;
+}
+
+.edu-subtitle {
+margin: 0.5rem 0;
+color: #3498db;
+font-weight: 500;
+}
+
+/* ==== Projects Section ==== */
+
+
+.projects-grid {
+display: grid;
+gap: 2rem;
+grid-template-columns: 1fr 1fr;
+}
+
+.project-card {
+background: #f5f5f5;
+padding: 2rem;
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+transform: translateY(-5px);
+}
+
+.project-card h3 {
+margin-top: 0;
+font-size: 1.25rem;
+color: #2c3e50;
+}
+
+.project-card p {
+color: #555;
+font-size: 1rem;
+margin: 1rem 0;
+}
+
+.project-card .btn {
+background-color: #3498db;
+border: none;
+color: white;
+font-weight: 500;
+padding: 0.5rem 1.5rem;
+border-radius: 25px;
+text-decoration: none;
+}
+
+.project-card .btn:hover {
+background-color: #217dbb;
+}
+
+
