@@ -62,22 +62,9 @@ body {
 /* ------------------ */
 /* Burger menu mobile */
 .burger-menu {
-    display: none; /* caché desktop */
-    position: sticky;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 22px;
-    padding: 0.4rem 1rem;
-    width: 90vw;
-    max-width: 400px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    z-index: 10000;
-    flex-direction: column;
-    align-items: center;
+    display: none;
   }
+
   
   #burger-btn {
     font-size: 1.5rem;
