@@ -278,6 +278,12 @@ footer#contact {
   transform: translateY(0);
 }
 
+
+.section:nth-of-type(even) {
+    background-color: #f9f9f9;
+  }
+  
+
   
 .experience-section {
     padding: 4rem 1rem;
@@ -292,6 +298,12 @@ footer#contact {
   opacity: 1;
   transform: translateY(0);
 }
+
+
+.section:nth-of-type(even) {
+    background-color: #f9f9f9;
+  }
+  
 
 
 .projects-section {
