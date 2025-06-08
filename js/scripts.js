@@ -28,16 +28,13 @@ contactNavLink.addEventListener('click', (e) => {
 
 
 // Gestion unifiée de l'animation au scroll pour plusieurs sections
-const sections = ['education', 'experience', 'projects'].map(id => document.getElementById(id));
 
-function handleScroll() {
-  const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+function checkSections() {
+  const sections = ['education', 'experience', 'projects'].map(id => document.getElementById(id));
 
   sections.forEach(section => {
-    if (!section) return;
     const rect = section.getBoundingClientRect();
-
-    if (rect.top <= windowHeight * 0.75 && rect.bottom >= 0) {
+    if(rect.top < window.innerHeight - 100) {
       section.classList.add('visible');
     } else {
       section.classList.remove('visible');
@@ -45,6 +42,8 @@ function handleScroll() {
   });
 }
 
+window.addEventListener('scroll', checkSections);
+window.addEventListener('load', checkSections); 
 window.addEventListener('scroll', handleScroll);
 window.addEventListener('load', handleScroll); // pour appliquer au chargement aussi
 
