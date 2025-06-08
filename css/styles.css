@@ -34,7 +34,6 @@ body {
 /* Eviter que les liens dépassent */
 .nav-links {
     list-style: none;
-    color: white;
     display: flex;
     gap: 1rem;
     margin: 0;
@@ -61,7 +60,7 @@ body {
   
   #lead {
     height: 100vh;
-    position: absolute;
+    position: relative;
     background: url('../image/new_background.jpg') center/cover no-repeat;
 
   }
@@ -93,6 +92,9 @@ body {
     margin: 0;
     line-height: 1.1;
     letter-spacing: 2px;
+    font-size: clamp(2rem, 8vw, 4rem);
+    word-break: break-word;
+    overflow-wrap: break-word;
     max-width: 100%;
   }
   
@@ -294,45 +296,21 @@ body {
   }
 
   .education-section {
-    position: relative;
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+
 }
-
-.education-section.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-
 
   
 .experience-section {
-    position: relative;
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+
 }
 
-.experience-section.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 
 
 .projects-section {
-    position: relative;
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+
 }
 
-.projects-section.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
   
   .container {
     max-width: 900px;
@@ -382,7 +360,9 @@ body {
     border: 1px solid #e0e0e0;
     border-radius: 6px;
     padding: 2rem;
-
+    flex-wrap: wrap;
+    word-break: break-word;
+    overflow-wrap: break-word;
     max-width: 100%;
     margin-bottom: 2rem;
     align-items: flex-start;
@@ -395,7 +375,9 @@ body {
     gap: 1.5rem;
     background: white;
     border: 1px solid #e0e0e0;
- 
+    flex-wrap: wrap;
+    word-break: break-word;
+    overflow-wrap: break-word;
     max-width: 100%;
     padding: 2rem;
     border-radius: 6px;
