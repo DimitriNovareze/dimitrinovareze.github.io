@@ -11,35 +11,24 @@ body {
     overflow-x: hidden; /* évite le scroll horizontal */
   }
   .navbar {
-    position: sticky;
+    position: sticky    ;
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
     width: 600px;
+    height: 44px;
     padding: 0 1.5rem;
     border-radius: 22px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background: rgba(255, 255, 255, 0.1);           /* semi-transparent */
+    backdrop-filter: blur(10px);                   /* flou derrière */
+    -webkit-backdrop-filter: blur(10px);           /* flou sur Safari */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);         /* petite ombre douce */
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    z-index: 10000;
-    height: 44px;
+    z-index: 10000;                                 /* très haut pour être au-dessus de tout */
+    overflow: hidden;                               /* rien ne dépasse des coins */
   }
-  
-
-  
-  .side-nav {
-    background-color: #222; /* exemple pour contraste */
-  }
-  
-  .side-nav li a {
-    color: white;
-    font-weight: 600;
-    padding: 1rem;
-  }
-  
   
 
 /* Eviter que les liens dépassent */
@@ -69,10 +58,55 @@ body {
     transform: scale(1.05);
   }
 
+ /* Bouton burger - caché par défaut */
+.burger {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+  }
+  
 
 
-
-
+  /* ------ Responsive mobile ------ */
+@media (max-width: 768px) {
+    .navbar {
+      width: 70%;
+      height: auto;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+    }
+  
+    .burger {
+        display: block;
+        align-self: flex-end;
+        font-size: 1.8rem;
+        background: none;
+        border: none;
+        color: white; /* pour qu’on le voie bien sur fond foncé */
+        cursor: pointer;
+      }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 1rem;
+    }
+  
+    .nav-links.open {
+      display: flex;
+    }
+  
+    .nav-links li a {
+      padding: 0.5rem 0;
+      color: #fff;
+    }
+  }
+  
   #lead {
     height: 100vh;
     position: relative;
@@ -447,7 +481,7 @@ body {
     }
   
     .edu-card p {
-      text-align: center; 
+      text-align: center; /* tu peux mettre center si tu préfères */
     }
   }
   
