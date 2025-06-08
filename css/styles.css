@@ -481,7 +481,7 @@ body {
     }
   
     .edu-card p {
-      text-align: justify; /* tu peux mettre center si tu préfères */
+      text-align: center; 
     }
   }
   
