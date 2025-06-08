@@ -57,6 +57,38 @@ body {
     color: white;
     transform: scale(1.05);
   }
+
+
+  /* ------ Responsive mobile ------ */
+@media (max-width: 768px) {
+    .navbar {
+      width: 90%;
+      height: auto;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+    }
+  
+    .burger {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 1rem;
+    }
+  
+    .nav-links.open {
+      display: flex;
+    }
+  
+    .nav-links li a {
+      padding: 0.5rem 0;
+      color: #fff;
+    }
+  }
   
   #lead {
     height: 100vh;

@@ -25,4 +25,11 @@ contactNavLink.addEventListener('click', (e) => {
   e.preventDefault(); // Évite le scroll vers le bas
   modal.style.display = 'block';
 });
+  document.addEventListener("DOMContentLoaded", function () {
+    const burger = document.querySelector(".burger");
+    const navLinks = document.querySelector(".nav-links");
 
+    burger.addEventListener("click", function () {
+      navLinks.classList.toggle("open");
+    });
+  });
