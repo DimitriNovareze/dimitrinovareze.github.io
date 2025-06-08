@@ -27,6 +27,7 @@ contactNavLink.addEventListener('click', (e) => {
 });
 
 
+// Gestion unifiée de l'animation au scroll pour plusieurs sections
 const sections = ['education', 'experience', 'projects'].map(id => document.getElementById(id));
 
 function handleScroll() {
@@ -46,5 +47,3 @@ function handleScroll() {
 
 window.addEventListener('scroll', handleScroll);
 window.addEventListener('load', handleScroll); // pour appliquer au chargement aussi
-
-
