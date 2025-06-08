@@ -4,6 +4,12 @@ body {
 
     color: #333;
   }
+
+  html, body {
+    width: 100%;
+    overflow-x: hidden; /* évite le scroll horizontal */
+  }
+  
   
 
   
@@ -163,6 +169,8 @@ body {
   #lead {
     height: 100vh;
     position: relative;
+    max-width: 100%;
+    display: block;
     background: url('../image/new_background.jpg') center/cover no-repeat;
 
   }
@@ -435,6 +443,8 @@ body {
   
   .container {
     max-width: 900px;
+    width: 100%;
+
     margin: auto;
   }
   
