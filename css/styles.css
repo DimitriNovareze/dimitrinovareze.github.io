@@ -14,26 +14,26 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
   
-.navbar {
-    position: sticky;
-    top: 0;
-    left: 50%;              /* pour centrer horizontalement */
+  .navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
     transform: translateX(-50%);
-    width: 400px;           /* largeur fixe plus compacte */
-    height: 40px;           /* hauteur plus petite */
-    background-color: rgba(0, 0, 0, 0.9); /* blanc translucide */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    border-radius: 20px;    /* arrondir les bords */
+    width: 300px;
+    height: 44px;
+    padding: 0 1.5rem;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.1);           /* semi-transparent */
+    backdrop-filter: blur(10px);                   /* flou derrière */
+    -webkit-backdrop-filter: blur(10px);           /* flou sur Safari */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);         /* petite ombre douce */
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
-    overflow: hidden; 
-    font-family: 'Montserrat', sans-serif;
-    padding: 0 1rem;
-    backdrop-filter: blur(10px); /* effet flou derrière (optionnel) */
-    -webkit-backdrop-filter: blur(10px); /* support Safari */
+    z-index: 10000;                                 /* très haut pour être au-dessus de tout */
+    overflow: hidden;                               /* rien ne dépasse des coins */
   }
+  
 
 /* Eviter que les liens dépassent */
 .nav-links {
