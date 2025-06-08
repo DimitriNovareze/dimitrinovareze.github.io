@@ -27,41 +27,24 @@ contactNavLink.addEventListener('click', (e) => {
 });
 
 
-// Gestion unifiée de l'animation au scroll pour plusieurs sections
+const sections = ['education', 'experience', 'projects'].map(id => document.getElementById(id));
 
-function checkSections() {
-  const sections = ['education', 'experience', 'projects'].map(id => document.getElementById(id));
+const observerOptions = {
+  root: null,
+  rootMargin: '0px 0px -100px 0px',
+  threshold: 0
+};
 
-  sections.forEach(section => {
-    const rect = section.getBoundingClientRect();
-    if(rect.top < window.innerHeight - 100) {
-      section.classList.add('visible');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting) {
+      entry.target.classList.add('visible');
     } else {
-      section.classList.remove('visible');
+      entry.target.classList.remove('visible');
     }
   });
-}
+}, observerOptions);
 
-window.addEventListener('scroll', checkSections);
-window.addEventListener('load', checkSections); 
-
-
-function checkSections() {
-  const sections = ['education', 'experience', 'projects'].map(id => document.getElementById(id));
-
-  console.clear();
-  console.log('Window height:', window.innerHeight);
-
-  sections.forEach(section => {
-    const rect = section.getBoundingClientRect();
-    console.log(`${section.id} top:`, rect.top);
-
-    if(rect.top < window.innerHeight - 100) {
-      section.classList.add('visible');
-      console.log(`${section.id} visible`);
-    } else {
-      section.classList.remove('visible');
-      console.log(`${section.id} hidden`);
-    }
-  });
-}
+sections.forEach(section => {
+  observer.observe(section);
+});
