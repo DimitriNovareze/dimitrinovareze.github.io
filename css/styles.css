@@ -311,6 +311,7 @@ footer#contact {
 
 
 .projects-section {
+    background-color: yellow;
     position: relative;
   opacity: 0;
   transform: translateY(40px);
@@ -321,10 +322,6 @@ footer#contact {
   opacity: 1;
   transform: translateY(0);
 }
-
- 
-  
-
   
   .container {
     max-width: 900px;
@@ -365,8 +362,6 @@ footer#contact {
     line-height: 1.6;
     margin: 0;
   }
-  
-
 
   
   .exp-card {
