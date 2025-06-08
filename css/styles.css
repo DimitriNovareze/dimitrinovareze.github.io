@@ -34,6 +34,7 @@ body {
 /* Eviter que les liens dépassent */
 .nav-links {
     list-style: none;
+    color: white;
     display: flex;
     gap: 1rem;
     margin: 0;
@@ -60,7 +61,7 @@ body {
   
   #lead {
     height: 100vh;
-    position: relative;
+    position: absolute;
     background: url('../image/new_background.jpg') center/cover no-repeat;
 
   }
@@ -92,9 +93,6 @@ body {
     margin: 0;
     line-height: 1.1;
     letter-spacing: 2px;
-    font-size: clamp(2rem, 8vw, 4rem);
-    word-break: break-word;
-    overflow-wrap: break-word;
     max-width: 100%;
   }
   
@@ -384,9 +382,7 @@ body {
     border: 1px solid #e0e0e0;
     border-radius: 6px;
     padding: 2rem;
-    flex-wrap: wrap;
-    word-break: break-word;
-    overflow-wrap: break-word;
+
     max-width: 100%;
     margin-bottom: 2rem;
     align-items: flex-start;
@@ -399,9 +395,7 @@ body {
     gap: 1.5rem;
     background: white;
     border: 1px solid #e0e0e0;
-    flex-wrap: wrap;
-    word-break: break-word;
-    overflow-wrap: break-word;
+ 
     max-width: 100%;
     padding: 2rem;
     border-radius: 6px;
