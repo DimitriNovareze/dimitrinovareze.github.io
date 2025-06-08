@@ -27,21 +27,6 @@ contactNavLink.addEventListener('click', (e) => {
 });
 
 
-document.querySelectorAll('.nav-link').forEach(link => {
-  // On exclut le lien dont l'id est 'contact-nav-link'
-  if (link.id !== 'contact-nav-link') {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-      const targetID = link.getAttribute('href').substring(1);
-      const targetSection = document.getElementById(targetID);
-      if (targetSection) {
-        targetSection.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  }
-});
-
-
 // Gestion unifiée de l'animation au scroll pour plusieurs sections
 const sections = ['education', 'experience', 'projects'].map(id => document.getElementById(id));
 
