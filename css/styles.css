@@ -76,6 +76,8 @@
     width: 100%;
     transform: translate(-150%);
     display: flex;
+    z-index: 1001;
+    position: fixed;
     flex-direction: column;
     margin-left: -40px;
     padding-left: 50px;
@@ -116,7 +118,10 @@
     height: 62px;
   }
   
- 
+  .navbar_bis .menu-items {
+    display: flex;
+  }
+  
   .navbar_bis .nav-containerBIS li {
     list-style: none;
   }
@@ -223,6 +228,7 @@
     height: 100vh;
     position: relative;
     background: url('../image/new_background.jpg') center/cover no-repeat;
+    z-index: 1;
 
   }
   
