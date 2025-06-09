@@ -26,3 +26,13 @@ contactNavLink.addEventListener('click', (e) => {
   modal.style.display = 'block';
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const checkbox = document.querySelector(".nav-containerBIS .checkbox");
+  const menuLinks = document.querySelectorAll(".navbar_bis .menu-items a");
+
+  menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      checkbox.checked = false;
+    });
+  });
+});
