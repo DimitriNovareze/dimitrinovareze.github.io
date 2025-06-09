@@ -26,17 +26,3 @@ contactNavLink.addEventListener('click', (e) => {
   modal.style.display = 'block';
 });
 
-
-const burger = document.getElementById("burger");
-  const fullscreenMenu = document.getElementById("fullscreenMenu");
-
-  burger.addEventListener("click", () => {
-    fullscreenMenu.style.display = "flex";
-  });
-
-  // Optionnel : clic sur un lien ferme le menu
-  fullscreenMenu.addEventListener("click", (e) => {
-    if (e.target.tagName === "A") {
-      fullscreenMenu.style.display = "none";
-    }
-  });
