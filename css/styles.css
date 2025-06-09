@@ -66,24 +66,24 @@ body {
   
   /* Mobile : on affiche burger, on cache navbar */
   @media all and (max-width: 768px) {
-    .menu-icon
-    {
-        width: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        font-size: 40px;
-        color: white;
-        cursor: pointer;
-    }
     .navbar {
-        height: 60px;
+      display: block; /* ou grid si tu préfères */
+      text-align: center;
     }
+  
+    .menu-icon {
+      display: inline-block;
+      font-size: 40px;
+      color: white;
+      cursor: pointer;
+      margin: 0 auto;
+    }
+  
     .nav-links {
-        display: none;
+      display: none;
     }
   }
+  
   #lead {
     height: 100vh;
     position: relative;
