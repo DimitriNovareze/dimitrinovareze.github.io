@@ -101,7 +101,26 @@
         display: none;
     }
 
- 
+    .nav-containerBIS .hamburger-lines,
+    .nav-containerBIS .checkbox {
+      position: fixed;
+      top: 15px;
+      left: 15px;
+    }
+    
+    /* Ajoute un fond discret au carré */
+    .nav-containerBIS .hamburger-lines {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      padding: 6px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Assure que le carré est toujours au-dessus */
+    .nav-containerBIS .hamburger-lines,
+    .nav-containerBIS .checkbox {
+      z-index: 1100;
+    }
 
     
 .containerBIS {
