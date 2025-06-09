@@ -101,12 +101,6 @@
         display: none;
     }
 
-    .nav-containerBIS .hamburger-lines,
-    .nav-containerBIS .checkbox {
-      position: fixed;
-      top: 15px;
-      left: 15px;
-    }
     
     /* Ajoute un fond discret au carré */
     .nav-containerBIS .hamburger-lines {
@@ -170,12 +164,12 @@
   
   .nav-containerBIS {
     display: block;
-    position: relative;
     height: 60px;
   }
   
   .nav-containerBIS .checkbox {
     display: block;
+    position:absolute;
     z-index: 1003 !important;
     height: 32px;
     width: 32px;
