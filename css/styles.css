@@ -266,9 +266,7 @@
     margin: 0;
     line-height: 1.1;
     letter-spacing: 2px;
-    font-size: clamp(2rem, 8vw, 4rem);
-    word-break: break-word;
-    overflow-wrap: break-word;
+    font-size: clamp(3rem, 10vw, 6rem);
     max-width: 100%;
   }
   
