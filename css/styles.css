@@ -145,12 +145,13 @@
     display: block;
     position: relative;
     height: 60px;
+    z-index: 1003;
   }
   
   .nav-containerBIS .checkbox {
     position: absolute;
     display: block;
-    z-index: 1003;
+    z-index: 2003;
     height: 32px;
     width: 32px;
     top: 20px;
