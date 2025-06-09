@@ -103,7 +103,7 @@
       cursor: pointer;
     }
 
-    #toggle:checked + .main_pages {
+    #toggle:checked + .links {
         display: flex;
     }
   
