@@ -57,8 +57,7 @@ body {
     color: white;
     transform: scale(1.05);
   }
-  
-  .label
+  label
   {
       display: none;
   }
