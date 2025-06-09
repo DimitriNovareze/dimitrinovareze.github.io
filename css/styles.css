@@ -65,6 +65,9 @@
     display: none;
 }
 
+.containerBIS {display: none;}
+.nav-containerBIS {display: none;}
+
   /* ------------------ */
   /* Media queries */
   
@@ -79,7 +82,7 @@
  
 
     
-.container {
+.containerBIS {
     max-width: 1050px;
     width: 90%;
     margin: auto;
@@ -91,7 +94,7 @@
     box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
   }
   
-  .nav-container {
+  .nav-containerBIS {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -102,11 +105,11 @@
     display: flex;
   }
   
-  .navbar_bis .nav-container li {
+  .navbar_bis .nav-containerBIS li {
     list-style: none;
   }
   
-  .navbar_bis .nav-container a {
+  .navbar_bis .nav-containerBIS a {
     text-decoration: none;
     color: #0e2431;
     font-weight: 500;
@@ -114,17 +117,17 @@
     padding: 0.7rem;
   }
   
-  .navbar_bis .nav-container a:hover{
+  .navbar_bis .nav-containerBIS a:hover{
       font-weight: bolder;
   }
   
-  .nav-container {
+  .nav-containerBIS {
     display: block;
     position: relative;
     height: 60px;
   }
   
-  .nav-container .checkbox {
+  .nav-containerBIS .checkbox {
     position: absolute;
     display: block;
     height: 32px;
@@ -136,7 +139,7 @@
     cursor: pointer;
   }
   
-  .nav-container .hamburger-lines {
+  .nav-containerBIS .hamburger-lines {
     display: block;
     height: 26px;
     width: 32px;
@@ -149,7 +152,7 @@
     justify-content: space-between;
   }
   
-  .nav-container .hamburger-lines .line {
+  .nav-containerBIS .hamburger-lines .line {
     display: block;
     height: 4px;
     width: 100%;
@@ -157,16 +160,16 @@
     background: #0e2431;
   }
   
-  .nav-container .hamburger-lines .line1 {
+  .nav-containerBIS .hamburger-lines .line1 {
     transform-origin: 0% 0%;
     transition: transform 0.4s ease-in-out;
   }
   
-  .nav-container .hamburger-lines .line2 {
+  .nav-containerBIS .hamburger-lines .line2 {
     transition: transform 0.2s ease-in-out;
   }
   
-  .nav-container .hamburger-lines .line3 {
+  .nav-containerBIS .hamburger-lines .line3 {
     transform-origin: 0% 100%;
     transition: transform 0.4s ease-in-out;
   }
@@ -193,23 +196,23 @@
   
 
   
-  .nav-container input[type="checkbox"]:checked ~ .menu-items {
+  .nav-containerBIS input[type="checkbox"]:checked ~ .menu-items {
     transform: translateX(0);
   }
   
-  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  .nav-containerBIS input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
     transform: rotate(45deg);
   }
   
-  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  .nav-containerBIS input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
     transform: scaleY(0);
   }
   
-  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  .nav-containerBIS input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     transform: rotate(-45deg);
   }
   
-  .nav-container input[type="checkbox"]:checked ~ .logo{
+  .nav-containerBIS input[type="checkbox"]:checked ~ .logo{
     display: none;
   }
 
