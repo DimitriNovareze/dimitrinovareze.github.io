@@ -27,11 +27,19 @@ contactNavLink.addEventListener('click', (e) => {
 });
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  const burgerBtn = document.getElementById("burger-btn");
-  const burgerDropdown = document.getElementById("burger-dropdown");
+var sidenav = document.getElementById("mySidenav");
+var openBtn = document.getElementById("openBtn");
+var closeBtn2 = document.getElementById("closeBtn");
 
-  burgerBtn.addEventListener("click", () => {
-    burgerDropdown.classList.toggle("open");
-  });
-});
+openBtn.onclick = openNav;
+closeBtn2.onclick = closeNav;
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  sidenav.classList.add("active");
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  sidenav.classList.remove("active");
+}

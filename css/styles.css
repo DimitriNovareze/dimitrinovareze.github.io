@@ -59,68 +59,71 @@ body {
   }
 
 
-/* ------------------ */
-/* Burger menu mobile */
-.burger-menu {
-    position: sticky; /* ou sticky */
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10000;
-    display: none;
-    justify-content: center; /* pour centrer le contenu */
-    width: 100%; /* ou largeur précise si tu préfères */
-    padding: 0.4rem 1rem;
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(10px);
+/* Sidenav menu */
+.sidenav {
+    display:none;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #e8e8e8;
+    padding-top: 60px;
+    transition: left 0.5s ease;
   }
   
-
-  #burger-btn {
-    font-size: 1.5rem;
-    background: white;
-    border: none;
-    color: #333;
-    cursor: pointer;
-    width: 100%;
-    text-align: center;
-    padding: 0.3rem 0;
-  }
-  
-  /* Menu déroulant burger */
-  .burger-dropdown {
-    list-style: none;
-    padding: 0;
-    margin: 0.5rem 0 0 0;
-    display: none;
-    flex-direction: column;
-    gap: 0.6rem;
-  }
-  
-  .burger-dropdown li a {
-    display: block;
-    padding: 0.5rem 1rem;
-    background: rgba(30,30,30,0.9);
-    color: white;
+  /* Sidenav menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
-    border-radius: 8px;
-    font-weight: 600;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
   }
   
-  .burger-dropdown li a:hover {
-    background: #3498db;
+  .sidenav a:hover {
+    color: #111;
   }
   
+  .sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Active class */
+  .sidenav.active {
+    left: 0;
+  }
+  
+  /* Close btn */
+  .sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  /* Icône burger */
+  .burger-icon span {
+    display: none;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
   /* ------------------ */
   /* Media queries */
   
   /* Mobile : on affiche burger, on cache navbar */
   @media (max-width: 768px) {
-    .burger-menu {
+    .sidenav {
       display: flex;
     }
 
-    .burger-dropdown.open {
+    .burger-icon {
         display: flex;
       }
     .navbar {
