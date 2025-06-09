@@ -205,7 +205,7 @@
 
   
   .nav-containerBIS input[type="checkbox"]:checked ~ .menu-items {
-    transform: translateX(50%) !important;
+    transform: translateX(0%) !important;
   }
   
   .nav-containerBIS input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
