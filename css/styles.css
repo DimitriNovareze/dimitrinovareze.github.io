@@ -114,15 +114,18 @@
       border-radius: 10px;
       padding: 6px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      z-index: 1000;
+      display: block;
+      height: 26px;
+      width: 32px;
+      position: absolute;
+      top: 17px;
+      left: 20px;
+      z-index: 1002;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
-    
-    /* Assure que le carré est toujours au-dessus */
-    .nav-containerBIS .hamburger-lines,
-    .nav-containerBIS .checkbox {
-      z-index: 1100 !important;
-    }
-
+  
     
 .containerBIS {
     max-width: 1050px;
@@ -163,8 +166,6 @@
   .navbar_bis .nav-containerBIS a:hover{
       font-weight: bolder;
   }
-
-
   
   .nav-containerBIS {
     display: block;
@@ -173,8 +174,8 @@
   }
   
   .nav-containerBIS .checkbox {
-    position: absolute;
     display: block;
+    z-index: 1100 !important;
     height: 32px;
     width: 32px;
     top: 20px;
@@ -183,19 +184,7 @@
     cursor: pointer;
   }
   
-  .nav-containerBIS .hamburger-lines {
-    display: block;
-    height: 26px;
-    width: 32px;
-    position: absolute;
-    top: 17px;
-    left: 20px;
-    z-index: 1002;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
+ 
   .nav-containerBIS .hamburger-lines .line {
     display: block;
     height: 4px;
