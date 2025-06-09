@@ -69,7 +69,7 @@
    
       width: 100%;                  /* pleine largeur */
       left: 50%;    
-      transform: translateX(0%);
+      transform: translateX(-50%);
       height: 60px;
       border-radius: 0;             /* supprime les coins arrondis */
       background: #111;            
