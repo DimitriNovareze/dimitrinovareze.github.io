@@ -77,7 +77,6 @@
     width: 100%;
     transform: translate(-150%);
     display: flex;
-    z-index: 1002;
     position: fixed;
     flex-direction: column;
     margin-left: 0;
