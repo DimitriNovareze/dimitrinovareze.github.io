@@ -10,7 +10,7 @@
     overflow: hidden;
   }
   .navbar {
-    position: sticky    ;
+    position: fixed    ;
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
@@ -67,6 +67,7 @@
   @media all and (max-width: 768px) {
     .navbar {
       width: 100%;                  /* pleine largeur */
+      left: 50%;    
       height: 60px;
       border-radius: 0;             /* supprime les coins arrondis */
       background: #111;            
