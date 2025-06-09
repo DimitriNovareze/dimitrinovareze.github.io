@@ -78,7 +78,7 @@ body {
         cursor: pointer;
     }
     .navbar {
-      display: none;
+        height: 60px;
     }
     .nav-links {
         display: none;
