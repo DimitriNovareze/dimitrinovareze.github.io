@@ -69,23 +69,20 @@ body {
     z-index: 10000;
     display: none;
     justify-content: center; /* pour centrer le contenu */
-    width: 50vw; /* ou largeur précise si tu préfères */
-    max-width: 400px; /* limite largeur pour mobiles */
+    width: 100%; /* ou largeur précise si tu préfères */
     padding: 0.4rem 1rem;
     background: rgba(255,255,255,0.1);
     backdrop-filter: blur(10px);
-    border-radius: 22px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
   
 
   #burger-btn {
     font-size: 1.5rem;
-    background: transparent;
+    background: white;
     border: none;
     color: #333;
     cursor: pointer;
-    width: 50%;
+    width: 100%;
     text-align: center;
     padding: 0.3rem 0;
   }
