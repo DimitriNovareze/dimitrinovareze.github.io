@@ -1,14 +1,13 @@
-body {
+* {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
-
-    color: #333;
+    padding: 0;
+    box-sizing: border-box;
   }
   
-
-  html, body {
+  body, html {
     width: 100%;
-    overflow-x: hidden; /* évite le scroll horizontal */
+    height: 100%;
+    overflow: hidden;
   }
   .navbar {
     position: sticky    ;
@@ -70,7 +69,7 @@ body {
       width: 100%;                  /* pleine largeur */
       height: 60px;
       border-radius: 0;             /* supprime les coins arrondis */
-      background: #111;             /* couleur plus sombre ou comme tu veux */
+      background: #111;            
       backdrop-filter: none;        /* retire le flou */
       -webkit-backdrop-filter: none;
       box-shadow: none;             /* retire l’ombre si tu veux quelque chose de plat */
