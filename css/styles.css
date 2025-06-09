@@ -170,7 +170,7 @@
     position: absolute;
     top: 17px;
     left: 20px;
-    z-index: 1003;
+    z-index: 1002;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -181,6 +181,7 @@
     height: 4px;
     width: 100%;
     border-radius: 10px;
+    z-index: 1002;
     background: #0e2431;
   }
   
