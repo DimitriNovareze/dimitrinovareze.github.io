@@ -195,12 +195,13 @@
     margin-bottom: 1.2rem;
     font-size: 1.5rem;
     font-weight: 500;
+    list-style: none;
   }
   
 
   
   .nav-containerBIS input[type="checkbox"]:checked ~ .menu-items {
-    transform: translateX(50);
+    transform: translateX(0%);
   }
   
   .nav-containerBIS input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
