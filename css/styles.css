@@ -59,54 +59,21 @@
   .menu-icon {
     display: none;
 }
-#toggle
-{
-    display: none;
-}
+
+
+
   /* ------------------ */
   /* Media queries */
   
   /* Mobile : on affiche burger, on cache navbar */
   @media all and (max-width: 768px) {
     .navbar {
-   
-      width: 100%;                  /* pleine largeur */
-      left: 50%;    
-      transform: translateX(-50%);
-      height: 60px;
-      border-radius: 0;             /* supprime les coins arrondis */
-      background: #111;            
-      backdrop-filter: none;        /* retire le flou */
-      -webkit-backdrop-filter: none;
-      box-shadow: none;             /* retire l’ombre si tu veux quelque chose de plat */
-      
-      display: flex;
-      justify-content: center;      /* centre le burger */
-      align-items: center;
-      padding: 0;
-    }
-    nav .links 
-    {
-        display: none;
-        flex-direction: column;
-        background: #48435C;
-        height: 220px;
-    }
- 
-    nav .links a {
-        width: 50%;
-    }
-    .menu-icon {
-      display: flex;
-      font-size: 40px;
-      color: white;
-      cursor: pointer;
+   display : none;
     }
 
-    #toggle:checked + .links {
-        display: flex;
-    }
-  
+    .nav-links {display: none;}
+
+ 
     
   }
   
