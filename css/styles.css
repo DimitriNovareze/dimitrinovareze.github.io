@@ -150,6 +150,7 @@
   .nav-containerBIS .checkbox {
     position: absolute;
     display: block;
+    z-index: 1003;
     height: 32px;
     width: 32px;
     top: 20px;
