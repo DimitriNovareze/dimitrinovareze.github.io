@@ -264,6 +264,7 @@
     font-weight: 900;
     color: white;
     margin: 0;
+    white-space: nowrap; 
     line-height: 1.1;
     letter-spacing: 2px;
     font-size: clamp(3rem, 10vw, 6rem);
