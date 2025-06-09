@@ -67,6 +67,8 @@
 
 .containerBIS {display: none;}
 .nav-containerBIS {display: none;}
+.logo {
+    display:none;}
 
   /* ------------------ */
   /* Media queries */
@@ -119,6 +121,14 @@
   
   .navbar_bis .nav-containerBIS a:hover{
       font-weight: bolder;
+  }
+
+  .logo {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 1.2rem;
+    color: #0e2431;
   }
   
   .nav-containerBIS {
