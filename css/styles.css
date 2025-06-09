@@ -58,7 +58,7 @@ body {
     transform: scale(1.05);
   }
   .menu-icon {
-    display: none !important;
+    display: none;
 }
 
   /* ------------------ */
