@@ -66,8 +66,10 @@
   /* Mobile : on affiche burger, on cache navbar */
   @media all and (max-width: 768px) {
     .navbar {
+   
       width: 100%;                  /* pleine largeur */
       left: 50%;    
+      transform: translateX(0%);
       height: 60px;
       border-radius: 0;             /* supprime les coins arrondis */
       background: #111;            
@@ -80,7 +82,9 @@
       align-items: center;
       padding: 0;
     }
-  
+    .nav-links {
+        display: none;
+      }
     .menu-icon {
       display: flex;
       font-size: 40px;
@@ -88,9 +92,7 @@
       cursor: pointer;
     }
   
-    .nav-links {
-      display: none;
-    }
+    
   }
   
   
