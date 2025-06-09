@@ -116,10 +116,7 @@
     height: 62px;
   }
   
-  .navbar_bis .menu-items {
-    display: flex;
-  }
-  
+ 
   .navbar_bis .nav-containerBIS li {
     list-style: none;
   }
