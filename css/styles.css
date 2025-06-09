@@ -10,7 +10,7 @@
     overflow-x: hidden;
   }
   .navbar {
-    position: fixed    ;
+    position: sticky;
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
@@ -131,6 +131,7 @@
   
   .navbar_bis {
     display: flex;
+    position:fixed;
     width: 100%;
     background: transparent; 
     box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
